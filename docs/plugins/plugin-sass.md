@@ -5,19 +5,28 @@ translateHelp: true
 # @umijs/plugin-sass
 
 
-启用 sass 编译支持。
+Enabling `sass` Compilation support。
 
-## 启用方式
+## Installing
+Using npm:
 
-默认开启。
+`npm install --save-dev @umijs/plugin-sass`
 
-## 配置
+or using yarn:
 
-### implementation
+`yarn add @umijs/plugin-sass --dev`
 
-默认是 [Dart Sass](https://sass-lang.com/dart-sass)。
+## Activation method
 
-如果要切换到 [Node Sass](https://github.com/sass/node-sass)，可安装 `node-sass` 依赖，然后配置，
+Default is `ON`。
+
+## Configuration
+
+### Implementation
+
+Default is [Dart Sass](https://sass-lang.com/dart-sass)。
+
+If you want to switch to [Node Sass](https://github.com/sass/node-sass)，Install `node-sass` dependency and then configure as below.
 
 ```js
 export default {
@@ -31,4 +40,4 @@ export default {
 
 * Type: `Object|Function`
 
-传递给 [Dart Sass](https://github.com/sass/dart-sass#javascript-api) 或 [Node Sass](https://github.com/sass/node-sass/#options) 的配置项。
+Pass to [Dart Sass](https://github.com/sass/dart-sass#javascript-api) or [Node Sass](https://github.com/sass/node-sass/#options) configuration items。
